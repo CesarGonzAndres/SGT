@@ -1,0 +1,87 @@
+    header, section {
+      display: block;
+    }
+    body {
+      font-family: 'Arial';
+    }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    #features {
+      margin: auto;
+      width: 460px;
+      font-size: 0.9em;
+    }
+    .connected, .sortable, .exclude, .handles {
+      margin: auto;
+      padding: 0;
+      width: 310px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .sortable.grid {
+      overflow: hidden;
+    }
+    .connected td, .sortable td, .exclude td, .handles td {
+      list-style: none;
+      border: 1px solid #CCC;
+      background: #F6F6F6;
+      font-family: "Arial";
+      color: #1C94C4;
+      margin: 5px;
+      padding: 5px;
+      height: 22px;
+      /* nuevo agregado */
+    }
+    .handles span {
+      cursor: move;
+    }
+    td.disabled {
+      opacity: 0.5;
+    }
+    .sortable.grid td {
+      line-height: 80px;
+      float: left;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+    }
+    td.highlight {
+      background: #FEE25F;
+    }
+    #connected {
+      width: 440px;
+      overflow: hidden;
+      margin: auto;
+    }
+    .connected {
+      float: left;
+      width: 200px;
+    }
+    .connected.no2 {
+      float: right;
+    }
+    td.sortable-placeholder {
+      border: 1px dashed #CCC;
+      background: none;
+    }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }

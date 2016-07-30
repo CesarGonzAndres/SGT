@@ -1,0 +1,125 @@
+*{
+  font-size: 14px;
+  margin:0;
+  padding:0;
+  font-family: "Verdana", Arial, Helvetica, sans-serif;
+}
+h4 {
+
+}
+html, body {
+  height: 100%;
+}
+.container {
+  margin: 50px auto;
+  width: 640px;
+}
+.form_login {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+}
+#header {
+  background-color:black;
+  color:white;
+  text-align:center;
+  padding:5px;
+}
+#nav {
+  line-height:30px;
+  background-color:#eeeeee;
+  height:300px;
+  width:100px;
+  float:left;
+  padding:5px;
+}
+#section {
+  width:350px;
+  float:left;
+  padding:10px;
+}
+s.city {
+  float: left;
+  margin: 5px;
+  padding: 15px;
+  max-width: 300px;
+  height: 300px;
+  border: 1px solid black;
+} 
+#contrasena, #usuario {
+  width: 250px;
+}
+#form_login {
+  float: right;
+  margin: 5px;
+  padding: 15px;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid black;
+}
+form.login {
+  background: none repeat scroll 0 0 #F1F1F1;
+  border: 1px solid #DDDDDD;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  width: 278px;
+}
+form.login div {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+form.login div label {
+  display: block;
+  float: left;
+  line-height: 25px;
+}
+form.login div input[type="text"], form.login div input[type="password"] {
+  border: 1px solid #DCDCDC;
+  float: right;
+  padding: 4px;
+}
+form.login div input[type="submit"] {
+  background: none repeat scroll 0 0 #ff0000;
+  border: 1px solid black;
+  float: right;
+  font-weight: bold;
+  padding: 4px 20px;
+}
+.error{
+  color: red;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+
+#wrap {
+  min-height: 100%;
+}
+#main {
+  overflow:auto;
+  padding-bottom: 180px; /* must be same height as the footer */
+}
+#footer {
+  background-color:#d9d9d9;
+  border: 2px;
+  font-color: black;
+  border-color: red;
+  font-size: 12;
+  font-family: "Verdana", Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;
+}
+.nav navbar-nav {
+  background-color: black solid;
+}
+.bxslider {
+width: auto;
+}

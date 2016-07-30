@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="sortable.css">
+</head>
+<body>
+  <header><h1>Sistema de Gestion de Taladro</h1></header>
+
+  <section id="connected">
+    <h2>Plan Semanal de Mantenimiento Semana: 23</h2>
+    
+    <table>
+     <thead>Equipos Activos Segun Plan</thead>
+     
+      <tr>
+        <th>No</th>
+        <th>Equipo</th>
+        <th>HP</th>
+        <th>División</th>
+        <th>Actividad</th>
+      </tr>
+
+      <div>
+      <tr class="connected list">
+        <td>1</td>
+        <td>HP-113 (SB-08)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr></div>
+
+      <tr class="connected list">
+        <td>2</td>
+        <td>HP-115 (SB-10)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+
+      <tr class="connected list">
+        <td>3</td>
+        <td>HP-127 (SB-11)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+</table><br>
+
+<table>
+      <thead>Equipos en Mantenimiento Segun Plan</thead>
+      <tr>
+        <th>No</th>
+        <th>Equipo</th>
+        <th>HP</th>
+        <th>División</th>
+        <th>Actividad</th>
+      </tr>
+
+      <tr class="connected list no2">
+        <td>1</td>
+        <td>HP-113 (SB-08)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+
+      <tr class="connected list no2">
+        <td>2</td>
+        <td>HP-115 (SB-10)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+
+      <tr class="connected list no2">
+        <td>3</td>
+        <td>HP-127 (SB-11)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+</table><br>
+      
+<table>
+      <thead>Equipos Disponibles / Sin Secuencia Plan</thead>
+      <tr>
+        <th>No</th>
+        <th>Equipo</th>
+        <th>HP</th>
+        <th>División</th>
+        <th>Actividad</th>
+      </tr>
+      <tr class="connected list no3">
+        <td>1</td>
+        <td>HP-113 (SB-08)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+      <tr class="connected list no2">
+        <td>2</td>
+        <td>HP-115 (SB-10)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+      <tr class="connected list no2">
+        <td>3</td>
+        <td>HP-127 (SB-11)</td>
+        <td>3000</td>
+        <td>Sur del Lago Trujillo</td>
+        <td>Perforación</td>
+      </tr>
+</table>
+      
+  </section>
+
+
+
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="jquery.sortable.js"></script>
+  <script>
+    $(function() {
+      $('.sortable').sortable();
+      $('.handles').sortable({
+        handle: 'span'
+      });
+      $('.connected').sortable({
+        connectWith: '.connected'
+      });
+      $('.exclude').sortable({
+        items: ':not(.disabled)'
+      });
+    });
+  </script>
+
+
+</body>
+</html>
